@@ -1,6 +1,6 @@
 {
-  "name": "seed-component",
-  "version": "0.2.0",
+  "name": "quiver-loading-button",
+  "version": "1.0.0",
   "description": "<%= componentName %> - React component",
   "main": "lib/index.js",
   "jsnext:main": "es/index.js",
