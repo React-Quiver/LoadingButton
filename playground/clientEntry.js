@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Playground from 'component-playground';
 import LoadingButton from '../src';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+injectTapEventPlugin();
 
 const LoadingButtonExample = require('raw!../src/LoadingButton.example');
 
