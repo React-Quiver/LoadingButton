@@ -17,6 +17,10 @@ export default class LoadingButton extends Component {
     style: PropTypes.object,
   };
 
+  static contextTypes = {
+    muiTheme: PropTypes.object.isRequired,
+  };
+
   getButton() {
     const { status } = this.props;
     switch (status) {
@@ -90,6 +94,6 @@ export default class LoadingButton extends Component {
   }
 
   render() {
-    return <MuiThemeProvider>{this.getButton()}</MuiThemeProvider>;
+    return <MuiThemeProvider muiTheme={this.context.muiTheme}>{this.getButton()}</MuiThemeProvider>;
   }
 }

@@ -99,7 +99,7 @@ var LoadingButton = function (_Component) {
     value: function render() {
       return React.createElement(
         MuiThemeProvider,
-        null,
+        { muiTheme: this.context.muiTheme },
         this.getButton()
       );
     }
@@ -111,5 +111,8 @@ var LoadingButton = function (_Component) {
 LoadingButton.propTypes = {
   status: PropTypes.string,
   style: PropTypes.object
+};
+LoadingButton.contextTypes = {
+  muiTheme: PropTypes.object.isRequired
 };
 export default LoadingButton;
